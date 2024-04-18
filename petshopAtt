@@ -1,6 +1,8 @@
-import resources.LerDados;
+package application;
 
-public class petshopAtt {
+import entities.LerDados;
+
+public class Programa {
 	LerDados ler = new LerDados();
 	 public static void main(String[] args) {
 	        menuPrincipal();
@@ -65,18 +67,20 @@ public class petshopAtt {
 	private static void salvarCadastroPet(String nomePet, int idadePet, String portePet, double pesoPet, String anotacoesPet) {	
 	}
 	private static void cadastroProprietario() {	
-		System.out.print("Digite o seu nome completo: ");
+		System.out.print("Digite o seu nome: ");
 		var nomeProprietario = LerDados.lerTexto();
-		System.out.print("Digite seu cpf: ");
+		System.out.print("Digite o seu CPF: ");
 		var cpf = LerDados.lerInt("Parece que você digitou errado, digite seu cpf novamente.");
-		System.out.print("Digite seu telefone: ");
+		System.out.print("Digite o seu telefone: ");
 		var telefone = LerDados.lerInt("Parece que você digitou errado, digite seu telefone novamente");
+		System.out.print("Digite o seu endereço: ");
+		var endereço = LerDados.lerTexto();
 		System.out.print("Digite seu e-mail: ");
 		var email = LerDados.lerTexto();
 		
-		salvarCadastroProprietario(nomeProprietario, cpf, telefone, email);
+		salvarCadastroProprietario(nomeProprietario, cpf, telefone, email, endereço);
 	}
-	private static void salvarCadastroProprietario(String nomeProprietario, int cpf, int telefone, String email) {	
+	private static void salvarCadastroProprietario(String nomeProprietario, int cpf, int telefone, String email, String endereço) {	
 	}
 	private static void agendamentoServicos() {
 	}
