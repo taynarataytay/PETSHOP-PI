@@ -159,7 +159,7 @@ if (opcao == 1) {
 
         System.out.print("Idade: ");
         int idade = entrada.nextInt();
-        entrada.nextLine(); // Limpar o buffer do scanner
+        entrada.nextLine();
 
         System.out.print("Email: ");
         String email = entrada.next();
