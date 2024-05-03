@@ -1,0 +1,32 @@
+case 3:
+    System.out.println("Você escolheu deixar seu animal na daycare.");
+    System.out.println("Digite a data de hospedagem do seu pet (formato dd/mm):");
+    entrada.nextLine(); // Consumir a quebra de linha pendente do próximoInt
+    String dataHospedagem = entrada.nextLine();
+
+    System.out.println("Escolha a localidade para a hospedagem do seu pet:");
+    System.out.println("1. Centro Pet");
+    System.out.println("2. Pet Paradise");
+    System.out.println("3. Happy Pet House");
+
+    int escolha = entrada.nextInt();
+
+    String localidade;
+
+    switch (escolha) {
+        case 1:
+            localidade = "Centro Pet";
+            break;
+        case 2:
+            localidade = "Pet Paradise";
+            break;
+        case 3:
+            localidade = "Happy Pet House";
+            break;
+        default:
+            localidade = "Localidade inválida";
+            break;
+    }
+
+    System.out.println("Você escolheu " + localidade + " para a hospedagem do seu pet na data " + dataHospedagem + ".");
+    break;
