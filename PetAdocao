@@ -14,7 +14,7 @@ public class PetAdocao {
 
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer do scanner
+        scanner.nextLine();
 
         System.out.print("Email: ");
         String email = scanner.nextLine();
